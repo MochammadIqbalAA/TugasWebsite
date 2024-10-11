@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>434</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </head>
+
+<body class="body dark-mode">
+  
+  
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary m-0 p-0">
+            <div class="container-fluid m-0 p-0">
+              <a class="navbar-brand d-flex align-items-center" href="#">
+                <img class="img" src="assets\logo.png" alt="Logo" width="75" height="80" class="d-inline-block align-text-top">
+                <h2 class="Tittle"> 434 </h2>
+              </a>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup"></div>
+                <div class="navbar-nav ms-auto">
+                  <h4><a class="nav-link active" aria-current="page" href="#">Beranda</a></h4>
+                  <h4><a class="nav-link" href="#anime-list">Anime List</a></h4>
+                  <h4><a class="nav-link" href="#">Premium</a></h4>
+                  <h4><a class="nav-link" href="#">Jadwal Rilis</a></h4>
+                  <h4><a class="nav-link" href="#">Genre</a></h4>
+                </div>
+                <form class="d-flex ms-5 p-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                  </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <br>
+    <main>
+        <!-- carousel -->
+        <div class="container mx-auto px-4">
+
+        <div class="rectangel-carousel"></div>
+          <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="assets/samurai-champloo.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 >Samurai Champloo</h5>
+                  <p class="p-carousel">Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="assets/kimi-no-nawa.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 >Kimi No Nawa</h5>
+                  <p class="p-carousel" >Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/solo-leveling.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5  >Solo Leveling</h5>
+                  <p class="p-carousel" >Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button> -->
+            <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                  <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                  </svg>
+                  <span class="sr-only">Previous</span>
+              </span>
+          </button>
+          <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                  <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                  </svg>
+                  <span class="sr-only">Next</span>
+              </span>
+          </button>
+          </div>
+        </div>
+        <br><br><br><br>
+        <!-- scroll-list -->
+      <div class="container" >
+        <div class="text-list" id="anime-list">
+          <h1>Anime List</h1>
+          <h3><a href="">See All...</a></h3>
+        </div>
+          <div class="horizontal-scroll">
+        <div class="container-list">
+          <div class="items"><a href=""><img src="assets/haikyuu.jpg" alt=""></a></div>
+          <div class="items"><a href=""><img src="assets/jujutsu-kaisen.jpg" alt=""></a></div>
+          <div class="items"><a href=""><img src="assets/kimetsu.jpg" alt=""></a></div>
+          <div class="items"><a href=""><img src="assets/naruto.jpg" alt=""></a></div>
+          <div class="items"><a href=""><img src="assets/one-piece.jpg" alt=""></a></div>
+          <div class="items"><a href=""><img src="assets/tokyo-ghouljpg.jpg" alt=""></a></div>
+          <div class="items"><a href=""><img src="assets/zankyou-no-terror.jpg" alt=""></a></div>
+          <div class="items"><a href=""><img src="assets/kimetsu.jpg" alt=""></a></div>
+          <div class="items"><a href=""><img src="assets/naruto.jpg" alt=""></a></div>
+          <div class="items"><a href=""><img src="assets/one-piece.jpg" alt=""></a></div>
+        </div>
+      </div>
+      </div>
+    </main>
+
+
+    <br>
+    <footer>
+
+        <h3> &copy; Copyright Mochammad Iqbal Aliyyudin Al Hakim-202210370311434</h3>
+
+    </footer>
+</body>
+</html>
