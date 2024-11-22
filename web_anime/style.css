@@ -1,0 +1,159 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and global styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Layout for Sidebar and Main Content */
+.container {
+    display: flex;
+    flex: 1;  /* This ensures the content fills available space */
+}
+
+/* Sidebar Styling */
+.sidebar {
+    background-color: #1e90ff;
+    color: white;
+    width: 250px;
+    padding: 30px;
+    height: 100%;
+}
+
+.sidebar h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+    color: #ffb300;
+}
+
+/* Main Content Styling */
+.main-content {
+    flex: 1;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    font-size: 28px;
+}
+
+#add-anime-btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#add-anime-btn:hover {
+    background-color: #218838;
+}
+
+/* Styling the Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #f9f9f9;
+}
+
+table button {
+    background-color: #ffb300;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+table button:hover {
+    background-color: #e68900;
+}
+
+/* Anime Form Modal */
+#anime-form-container {
+    display: none;
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#anime-form input, #anime-form button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#anime-form button {
+    background-color: #28a745;
+    color: white;
+}
+
+#anime-form button:hover {
+    background-color: #218838;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;  /* Ensures footer is at the bottom */
+    width: 100%;
+}

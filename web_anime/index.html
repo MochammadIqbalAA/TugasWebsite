@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h1>Web Streaming</h1>
+            <ul>
+                <li><a href="#anime-list">Anime List</a></li>
+                
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <h2>Anime List</h2>
+                <button id="add-anime-btn">Add Anime</button>
+            </div>
+
+            <table id="anime-table">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Genre</th>
+                        <th>Description</th>
+                        <th>Year</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="anime-list-container">
+                    <!-- Anime rows will be injected here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <div id="anime-form-container">
+        <h2>Add/Edit Anime</h2>
+        <form id="anime-form">
+            <input type="hidden" id="anime-id" />
+            <input type="text" id="anime-title" placeholder="Anime Title" required />
+            <input type="text" id="anime-genre" placeholder="Genre" required />
+            <input type="text" id="anime-description" placeholder="Description" required />
+            <input type="number" id="anime-release-year" placeholder="Release Year" required />
+            <button type="submit" id="submit-btn">Add Anime</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Anime CRUD System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
